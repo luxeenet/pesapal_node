@@ -243,7 +243,7 @@ class PesapalV30Helper {
   }
 
   // Register IPN
-  async registerIPN(accessToken, { ipn_notification_type = 'GET', url = 'https://yourdomain.com/api/ipn-callback' }) {
+  async registerIPN(accessToken, { ipn_notification_type = 'GET', url = 'https://pesapal2-cba66ea19877.herokuapp.com/api/ipn-callback' }) {
     try {
       const response = await axios.post(`${this.url}/api/URLSetup/RegisterIPN`, {
         ipn_notification_type,

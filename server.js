@@ -264,7 +264,7 @@ app.post('/api/submit-order', async (req, res) => {
     currency: orderPayload.currency,
     amount: orderPayload.amount,
     description: orderPayload.description,
-    callback_url: "http://localhost:3001/api/payment-callback", // Use the full URL to this callback endpoint
+    callback_url: "https://pesapal2-cba66ea19877.herokuapp.com/api/payment-callback", // Use the full URL to this callback endpoint
     notification_id: orderPayload.notification_id,
     billing_address: orderPayload.billing_address,
   };
